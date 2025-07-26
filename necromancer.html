@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Zero: Necromancer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body.story-body {
+      background-image: url('ankhmenhotepp.png');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #c585d4;
+    }
+    .story-content {
+      max-width: 680px;
+      margin: 40px auto;
+      background: rgba(35, 19, 39, 0.72);
+      border-radius: 20px;
+      padding: 36px 24px 22px 24px;
+      box-shadow: 0 0 60px #201533cc;
+      position: relative;
+      z-index: 2;
+    }
+    .chapter-art {
+      width: 90%;
+      max-width: 480px;
+      display: block;
+      margin: 32px auto;
+      border-radius: 14px;
+      border: 2px solid #8be9fd55;
+      box-shadow: 0 0 36px #2c1a4e99;
+      transition: transform 0.3s;
+    }
+    .chapter-art:hover {
+      transform: scale(1.08);
+      border-color: #ff79c6;
+    }
+    .chapter-divider {
+      margin: 42px 0 30px 0;
+      border: none;
+      border-top: 2px dashed #7df9ff66;
+      opacity: 0.7;
+    }
+    .sigil {
+      font-size: 2.6em;
+      color: #ac09cc;
+      text-align: center;
+      letter-spacing: 0.13em;
+      text-shadow: 0 0 18px #ff79c644;
+      font-weight: bold;
+      margin: 38px 0 16px 0;
+    }
+    .lore-quote {
+      color: #ffd5fd;
+      font-size: 1.09em;
+      font-style: italic;
+      text-align: center;
+      margin: 24px 0 18px 0;
+      text-shadow: 0 0 7px #ff79c6aa;
+      letter-spacing: 0.01em;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    h1 {
+      animation: neonPulse 3.5s infinite ease-in-out;
+      font-size: 2.5em;
+      margin-bottom: 28px;
+      margin-top: 2px;
+      color: #ffcaff;
+    }
+    h2 {
+      color: #ff79c6;
+      margin-top: 35px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      font-size: 1.4em;
+    }
+    .nav {
+      margin-top: 48px;
+      text-align: center;
+    }
+    .nav a {
+      margin: 0 12px;
+      font-weight: bold;
+      letter-spacing: 0.02em;
+      font-size: 1.12em;
+      color: #ffcaff;
+      text-shadow: 0 0 5px #ff79c6;
+      transition: color 0.18s;
+    }
+    .nav a:hover {
+      color: #fff68f;
+      text-shadow: 0 0 12px #ffbdf7;
+    }
+    @keyframes neonPulse {
+      0% {
+        text-shadow: 0 0 5px #c300ff, 0 0 10px #c300ff, 0 0 20px #bd15ff, 0 0 40px #8be9fd;
+        color: #ffbdf7;}
+      50% {
+        text-shadow: 0 0 16px #ffbdf7, 0 0 32px #ffb8f9;
+        color: #ffd4f4;}
+      100% {
+        text-shadow: 0 0 5px #c300ff, 0 0 10px #c300ff, 0 0 20px #c300ff, 0 0 40px #8be9fd;
+        color: #ffbdf7;}
+    }
+    @media (max-width: 700px) {
+      .story-content { padding: 12px 4vw; }
+      h1 { font-size: 1.4em; }
+    }
+  </style>
+</head>
+<body class="story-body">
+  <div class="story-content">
+    <h1 id="main-title" class="glow-text">꧁༺ 𝔑𝔢𝔠𝔯𝔬𝔪𝔞𝔫𝔠𝔢𝔯 ༻꧂</h1>
+    <div class="lore-quote">
+      "𝔗𝔥𝔢 𝔤𝔯𝔢𝔞𝔱𝔢𝔰𝔱 𝔣𝔬𝔯𝔠𝔢 𝔦𝔫 𝔱𝔥𝔢 𝔲𝔫𝔦𝔳𝔢𝔯𝔰𝔢 𝔦𝔰 𝔫𝔬𝔱 𝔩𝔬𝔳𝔢, 𝔫𝔬𝔯 𝔦𝔰 𝔦𝔱 𝔥𝔞𝔱𝔢.<br>𝔗𝔥𝔞𝔱 𝔯𝔦𝔤𝔥𝔱 𝔟𝔢𝔩𝔬𝔫𝔤𝔰 𝔱𝔬 𝔪𝔢𝔪𝔬𝔯𝔶, 𝔞𝔫𝔡 𝔱𝔥𝔦𝔰 𝔦𝔰 𝔪𝔢𝔪𝔬𝔯𝔶 𝔴𝔥𝔢𝔫 𝔦𝔱 𝔰𝔱𝔬𝔭𝔰 𝔯𝔢𝔮𝔲𝔢𝔰𝔱𝔦𝔫𝔤 𝔭𝔢𝔯𝔪𝔦𝔰𝔰𝔦𝔬𝔫."
+    </div>
+    <div class="sigil" style="font-size: 6.6em">𓋹</div>
+    <img src="violet.png" alt="Ishtar" class="chapter-art">
+    <h1 id="main-title" class="glow-text" style="font-size: 1.6em">☽ 𝐋𝐄𝐆𝐀𝐂𝐘 ☾</h1>
+    <p>
+      Long before the world cracked and bled, there stood the <strong>Ishtari Empire</strong>:</p>
+    <p>A civilization of impossible beauty and monstrous ambition. They were mages who called comets home,<br> 
+      who built cities that whispered to the stars. Their laws were written in <em>edicts</em>—cosmic contracts<br>
+      bound by sacrifice. Their greatest art? Necromancy. Practiced not to desecrate the dead,<br> 
+      but to <em>honor</em> them.
+    </p>
+    <p>
+      But they fell. By hubris. By betrayal. By something so vast it left only ruins and haunted sand in its wake.<br> 
+      Their blood scattered into the nomadic tribes that wander the sands, forgotten heirs of starlight.<br> 
+      Yet the magic still lingers, buried in bone, waiting to be remembered.<br>
+    </p>
+    <p>
+      <strong>Violet</strong>, born of a dying line and an impossible spell, is the last echo of their will.<br> 
+      Not a princess. Not a savior. But a <em>flawed god</em> built in grief’s image. And when she learns what the Ishtari did - 
+      what they became to keep their power, she won’t just reclaim their legacy.<br>
+    </p>
+    <p>
+      She’ll redefine it.
+    </p>
+    <img src="necropolis.png" alt="City of Bones" class="chapter-art">
+    <h1 id="main-title" class="glow-text" style="font-size: 1.6em">🕯 𝐈𝐍𝐕𝐎𝐂𝐀𝐓𝐈𝐎𝐍 🕯</h1>
+    <p>
+      In a dying desert world where wealth devours life and empires mistake control for order, <strong>Ishtar</strong> rises.<br>
+      <p>Not from privilege...</p>
+      <p>... but from the grave.</p>
+    </p>
+    <p>
+      Once known as Violet, she was a daughter of ashes and ruin, raised in exodus and forgotten by history.</p> 
+      <p>Until the day she whispered memory into death.</p>
+    </p>
+    <p>
+      Now called <strong>Necromancer</strong> by monarchs, <strong>Goddess</strong> by the oppressed, and <strong>Death</strong> by those with something to lose - she walks the dunes with a scythe forged of agony, grief, hatred, and soul-fire.
+    </p>
+    <p>
+      Her empire is not built on gold. It is built on every forgotten name. On every lie she severs like a neck. On the risen corpses of her would-be enemies, and the many unfortunate souls caught within the wake.<br>
+    </p>
+    <hr class="chapter-divider">
+    <h1 id="main-title" class="glow-text" style="font-size: 1.5em">☠ 𝐏𝐀𝐘𝐌𝐄𝐍𝐓 𝐈𝐍 𝐏𝐋𝐀𝐓𝐈𝐍𝐔𝐌 ☠</h1>
+    <p>
+      The city burned the desert clans to keep their vaults full. So she robbed their bank with a horde of undead, collecting in blood and platinum.
+    </p>
+    <p>
+      But the metal wasn’t just convenient. It was <em>new</em>. Traceable. A trap she now twists back on her hunters.
+    </p>
+    <p>
+      The law man who follows her has good reason: she’s left hundreds dead and nary a body left to prove the number. But what happens when the goddess he hunts sees the face of the daughter she murdered?
+    </p>
+    <p>
+      What happens if the necromancer twists... and decides to rewrite justice in her own name?
+    </p>
+
+    <img src="gravemarch.png" alt="Grave March" class="chapter-art">
+
+    <div class="sigil">𖤐</div>
+
+    <div class="nav">
+      <a href="index.html">← Return Home</a> |
+      <a href="story.html">← Neon Knights</a> |
+      <a href="contact.html">Contact Me →</a>
+    </div>
+  </div>
+</body>
+</html>

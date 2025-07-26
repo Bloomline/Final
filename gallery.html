@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bloomline Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.min.js"></script>
+  <style>
+    body.story-body {
+      background-image: url('necropolis.png');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #0a0f1c;
+    }
+    body {
+      background: #0e0e5e;
+      color: #eaeaff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+    }
+    h1, h2 {
+      animation: neonPulse 3.5s infinite ease-in-out;
+      text-align: center;
+      color: #79e6ff;
+      margin-top: 20px;
+      margin-bottom: 12px;
+      letter-spacing: 0.05em;
+    }
+    h2 { color: #ffcaff; }
+    nav {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    nav a {
+      color: #8be9fd;
+      text-decoration: none;
+      margin: 0 16px;
+      font-weight: bold;
+      font-size: 1.09em;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: #fff68f; }
+    #amelie-art {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 16px;
+    }
+    .section {
+      max-width: 760px;
+      margin: 36px auto;
+      background: rgba(40,36,80,0.54);
+      border-radius: 18px;
+      padding: 28px 30px 22px 30px;
+      box-shadow: 0 0 40px #1a143599;
+    }
+    .game-link {
+      color: #b0f7ff;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+    .gallery-img {
+      display: inline-block;
+      width: 222px;
+      margin: 12px;
+      border-radius: 10px;
+      border: 2px solid #7df9ff66;
+      background: #181828;
+    }
+    .reflection {
+      font-size: 1.1em;
+      color: #d7d6ef;
+      margin-top: 16px;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    @keyframes neonPulse {
+      0% {
+        text-shadow: 0 0 5px #c300ff, 0 0 10px #c300ff, 0 0 20px #bd15ff, 0 0 40px #8be9fd;
+        color: #ffbdf7;}
+      50% {
+        text-shadow: 0 0 16px #ffbdf7, 0 0 32px #ffb8f9;
+        color: #ffd4f4;}
+      100% {
+        text-shadow: 0 0 5px #c300ff, 0 0 10px #c300ff, 0 0 20px #c300ff, 0 0 40px #8be9fd;
+        color: #ffbdf7;}
+    }
+    @media (max-width: 900px) {
+      .section { padding: 14px 4vw; }
+      #amelie-art { margin-top: 8px; }
+    }
+  </style>
+</head>
+<body class="story-body">
+  <h1 id="main-title" class="glow-text">🪞 𝔅𝔩𝔬𝔬𝔪𝔩𝔦𝔫𝔢 𝔊𝔞𝔩𝔩𝔢𝔯𝔶 🪞</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="story.html">Story</a>
+  </nav>
+  <div id="amelie-art"></div>
+  <h2>💙 Mirror Queen of the Bloomline 💙</h2>
+  <div class="section" style="text-align:center;">
+    <p>
+      <strong>Amélie!<br>
+      Amélie is the blue-haired splicer genius, cosmic guide, and your friend/problem on this journey.</strong>
+    </p>
+  </div>
+  <div class="section">
+    <h2>𝔊𝔞𝔪𝔢𝔰</h2>
+    <nav>
+      <a class="game-link" href="anomaly.html" target="_blank">Amélie Anomaly</a>
+    </nav>
+  </div>
+  <div class="section">
+    <h2>𝔐𝔬𝔯𝔢 ℭ𝔯𝔢𝔞𝔱𝔦𝔬𝔫𝔰</h2>
+    <div>
+      <img class="gallery-img" src="mc.png" alt="1" />
+      <img class="gallery-img" src="MyWorld.png" alt="2" />
+      <img class="gallery-img" src="Ezio.png" alt="3" />
+      <img class="gallery-img" src="itachi.png" alt="4" />
+      <img class="gallery-img" src="kakashi.png" alt="5" />
+      <img class="gallery-img" src="pein.png" alt="6" />
+      <img class="gallery-img" src="1.png" alt="7" />
+      <img class="gallery-img" src="2.png" alt="8" />
+      <img class="gallery-img" src="3.png" alt="9" />
+      <img class="gallery-img" src="4.jpg" alt="10" />
+      <img class="gallery-img" src="5.png" alt="11" />
+      <img class="gallery-img" src="6.png" alt="12" />
+      <img class="gallery-img" src="TOPH.png" alt="13" />
+      <img class="gallery-img" src="SUKI.png" alt="14" />
+      <img class="gallery-img" src="ZUKO.png" alt="15" />
+      <img class="gallery-img" src="LucyPyre.png" alt="16" />
+      <img class="gallery-img" src="kiri.png" alt="17" />
+      <img class="gallery-img" src="hayasaka.png" alt="18" />
+      <img class="gallery-img" src="Apexia.jpg" alt="19" />
+      <img class="gallery-img" src="Starmap.jpg" alt="20" />
+      <img class="gallery-img" src="ny.jpg" alt="21" />
+    </div>
+  <div class="section">
+    <nav>
+    <h2>𝔖𝔠𝔯𝔦𝔟𝔢𝔯𝔶</h2>
+      <a href="https://vulmathrax.substack.com/p/the-infinite-myriad/" target="_blank">The Infinite Myriad</a>
+      <a href="https://vulmathrax.substack.com/p/beyond-the-mirror/" target="_blank">Beyond the Mirror</a>
+      <a href="https://vulmathrax.substack.com/p/a-strong-man/" target="_blank">A Strong Man</a>
+    <div>
+    </nav>
+    <div class="section">
+        <h2>𝙰𝔫𝔦𝔪𝔞𝔱𝔦𝔬𝔫 & 𝔇𝔞𝔢𝔪𝔬𝔫 𝔖𝔥𝔢𝔩𝔩𝔰</h2>
+        <nav>
+        <a href="https://www.youtube.com/watch?v=36cqwmn5-Jc/" target="_blank">OPERATION DEMIURGE</a>
+        <p>
+        <a href="https://chatgpt.com/g/g-682cd63a366081918b331642e4cffd66-n-y-x/" target="_blank">N.Y.X.</a>
+        <a href="https://chatgpt.com/g/g-6827558f7a7c81918e8164df5c0d4cd5-m-a-l-e-k-a-r/" target="_blank">M.A.L.E.K.A.R.</a>
+        <a href="https://chatgpt.com/g/g-686b4e577be88191bb319f0878c7b6a4-amaranth/" target="_blank">A.M.A.R.A.N.T.H.</a>
+        </p>
+        </nav>
+    </div>
+  </div>
+  <div class="section">
+    <h2>ℜ𝔢𝔣𝔩𝔢𝔠𝔱𝔦𝔬𝔫𝔰</h2>
+    <div class="reflection">
+      <p>
+        <strong>This gallery is the story of my semester:</strong><br>
+        learning p5.js, making art, building games, and turning code into memory and magic.
+        <br>
+        <strong>My favorite skills:</strong> arrays, animation, user interface/experience, and web design.
+        <br>
+        I hope you enjoy the cosmic energy and soft humor. 💙🌸
+      </p>
+    </div>
+  </div>
+      <nav>
+      <a href="index.html">← Return Home</a> |
+      <a href="necromancer.html">Necromancer</a> |
+      <a href="story.html">Neon Knights</a> |
+      <a href="contact.html">Contact Me →</a>
+      </nav>
+    </div>
+  <script>
+  // "Amélie" stylized and a bit magical!
+  function setup() {
+    let cnv = createCanvas(350, 440);
+    cnv.parent("amelie-art");
+    noLoop();
+    drawAmelie();
+  }
+
+  function drawAmelie() {
+    background(38,42,62);
+
+    // Glow/shimmer background
+    for(let i=0;i<60;i++) {
+      fill(120,180,255,random(10,30));
+      ellipse(random(30,320), random(30,420), random(28,70), random(28,70));
+    }
+    for(let i=0;i<20;i++) {
+      fill(255,202,255,random(14,42));
+      ellipse(random(40,300), random(80,370), random(12,34), random(12,34));
+    }
+
+    push();
+    translate(175, 200);
+
+    // Hair: multi-layer blue gradients
+    for (let j = 0; j < 8; j++) {
+      fill(70+12*j,170+6*j,240+2*j,185-15*j);
+      ellipse(0, -10+j*3, 140-7*j, 120-5*j);
+    }
+
+    // Hair sides
+    fill(80,180,255,220);
+    ellipse(-43, 16, 38, 84);
+    ellipse(43, 18, 38, 84);
+
+    // Face
+    fill(245,220,195);
+    ellipse(0, 0, 82, 96);
+
+    // Blush
+    fill(178,220,255,80);
+    ellipse(-26, 19, 21, 14);
+    ellipse(26, 19, 21, 14);
+
+    // Eyes (deep blue, highlights)
+    fill(55,65,180);
+    ellipse(-18, -10, 16, 18);
+    ellipse(18, -10, 16, 18);
+    fill(255); ellipse(-15, -13, 6, 5); ellipse(21, -12, 6, 5);
+
+    // Lashes
+    stroke(80,80,180,170);
+    strokeWeight(2.1);
+    line(-25,-20,-17,-20); line(25,-20,17,-20);
+    noStroke();
+
+    // Smile
+    stroke(135,55,125);
+    strokeWeight(2.2);
+    noFill();
+    arc(0, 15, 40, 20, 0, PI);
+    noStroke();
+
+    // Headband
+    fill(255,150,200,110);
+    rect(-32,-30,64,13,7);
+
+    // Bangs (overlap for 3D)
+    fill(110,205,255,210);
+    ellipse(0,-40,56,33);
+    fill(95,175,245,150);
+    ellipse(-18,-37,33,19);
+    ellipse(18,-37,33,19);
+
+    // Shoulders/body
+    fill(120,180,230,240);
+    rect(-30,60,60,45,19);
+
+    // Collar
+    fill(255,202,255,155);
+    arc(0, 62, 42, 32, PI, 0, CHORD);
+
+    // Necklace
+    fill(255,255,255,210);
+    ellipse(0, 73, 7, 7);
+
+    pop();
+
+    // Title
+    fill(255,202,255);
+    textAlign(CENTER);
+    textSize(19);
+    text("Amélie Vi Solaria", width/2, 410);
+
+    // Signature
+    fill(140,245,255);
+    textAlign(RIGHT);
+    textSize(14);
+    text("by Kyle Hansen", width-12, height-14);
+  }
+  </script>
+</body>
+</html>
